@@ -16,11 +16,11 @@ Make HTTP REST calls to `https://<region>-<project-id>.cloudfunctions.net/rest` 
 
 ### Using GodotFirebase plugin  
 1. Call `Firebase.set_emulated(true)` if you are running [Emulators](#emulator-testing), else call `Firebase.set_emulated(false)`  
-2. Call `Firebase.functions.execute("rest/<endpoint>", queryParams: {}, body: {})` to call a function on the "rest" endpoint
+2. Call `Firebase.functions.execute("rest/<endpoint>", method: int, queryParams: {}, body: {})` to call a function on the "rest" endpoint
 
 ## exposed APIs  
 | Type | Endpoint | Param | Body |  
 |:---|:---|:---|:---|  
-| POST | /user | null | { "firstName":string, "lastName":string } |  
+| POST | /user | null | { "firstName": string, "lastName": string } |  
 | GET | /user/:id | id: string | null |  
 | GET | /users | null | null |  
