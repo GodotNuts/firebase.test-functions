@@ -20,7 +20,7 @@ Make HTTP REST calls to `https://<region>-<project-id>.cloudfunctions.net/rest` 
 
 ## exposed APIs  
 | Type | Endpoint | Param | Body |  
-|-|-|-|  
+|:---|:---|:---|:---|  
 | POST | /user | null | { "firstName":string, "lastName":string } |  
 | GET | /user/:id | id: string | null |  
 | GET | /users | null | null |  
